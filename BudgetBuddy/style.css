@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.balance {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.income, .expense {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #ecf0f1;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.plus {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.minus {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.list {
+  list-style-type: none;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.list li {
+  background: #f1f1f1;
+  padding: 0.75rem;
+  border-left: 5px solid;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.list li.plus {
+  border-color: #2ecc71;
+}
+
+.list li.minus {
+  border-color: #e74c3c;
+}
